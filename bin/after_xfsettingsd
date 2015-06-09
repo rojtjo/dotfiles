@@ -1,0 +1,10 @@
+#!/bin/bash
+
+until p=$(pidof xfsettingsd)
+do
+        sleep 1
+done
+
+sleep 1
+
+synclient RBCornerButton=0 RTCornerButton=0

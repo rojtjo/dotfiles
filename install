@@ -1,0 +1,19 @@
+#!/bin/bash
+
+DIR=`pwd`
+
+function l {
+	TARGET=$HOME/$2
+	if [ ! -e "$TARGET" ]; then
+		ln -s "$DIR/$1" "$TARGET"
+	fi
+}
+
+echo "Linking dotfiles to the correct location..."
+
+l i3/config .i3/config
+l i3/i3status.conf .i3status.conf
+l bin/after_xfsettingsd bin/after_xfsettingsd
+l bin/random_background bin/random_background
+
+echo "Done."
