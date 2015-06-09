@@ -1,0 +1,101 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'tpope/vim-sensible'
+Plugin 'scrooloose/syntastic'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'stephpy/vim-php-cs-fixer'
+Plugin 'tpope/vim-surround'
+Plugin 'ervandew/supertab'
+Plugin 'Raimondi/delimitMate'
+Plugin 'pangloss/vim-javascript'
+Plugin 'xsbeats/vim-blade'
+Plugin 'fatih/vim-go'
+Plugin 'majutsushi/tagbar'
+Plugin 'benmills/vimux'
+Plugin 'myusuf3/numbers.vim'
+Plugin 'ZoomWin'
+Plugin 'StanAngeloff/php.vim'
+Plugin 'chriskempson/base16-vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+set ttimeout
+set ttimeoutlen=50
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
+set laststatus=2
+
+let mapleader = ","
+let g:mapleader = ","
+
+syntax enable
+
+set t_Co=256
+let base16colorspace=256
+colorscheme base16-3024
+set background=dark
+
+let g:airline_powerline_fonts=1
+
+let g:gitgutter_realtime=0
+let g:gitgutter_eager=0
+
+let g:go_fmt_command = "goimports"
+
+set wildmenu
+
+set number
+
+let NERDTreeShowHidden=1
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+let g:syntastic_quiet_messages = { "type": "style" }
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+map <leader>e :NERDTreeToggle<CR>
+nnoremap <F3> :NumbersToggle<CR>
+nnoremap <F4> :NumbersOnOff<CR>
+
+nmap <F8> :TagbarToggle<CR>
