@@ -44,7 +44,7 @@ plugins=(git composer copydir copyfile debian extract gem github git-flow jump l
 
 source $ZSH/oh-my-zsh.sh
 
-BASE16_SHELL="$HOME/.config/base16/shell/base16-3024.dark.sh"
+BASE16_SHELL="$HOME/.config/base16-shell/base16-ocean.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 export GOPATH=$HOME/go

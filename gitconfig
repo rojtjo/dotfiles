@@ -1,0 +1,12 @@
+[user]
+	email = me@rojvroemen.com
+	name = Roj Vroemen
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[web]
+  browser = chromium-browser
+[color]
+  ui = true
+[push]
+  default = matching
