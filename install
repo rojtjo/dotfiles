@@ -11,17 +11,17 @@ function l {
 
 echo "Install packages"
 sudo apt-get update
-sudo apt-get install curl zsh i3 dunst vim htop
+sudo apt-get install curl zsh i3 dunst vim htop feh --yes
 
 echo "Setup Shell colors"
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 
 echo "Setup theme"
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_15.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
-sudo apt-get install arc-theme
+sudo apt-get install arc-theme --yes
 
 sudo add-apt-repository ppa:numix/ppa
-sudo apt-get install numix-icon-theme-circle
+sudo apt-get install numix-icon-theme-circle --yes
 
 echo "Install PowerlineFonts"
 git clone --depth=1 git@github.com:powerline/fonts.git /tmp/fonts
@@ -34,11 +34,15 @@ rm $HOME/.zshrc # Remove default config file so the setup config file can be lin
 echo "Install Google Chrome"
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-sudo apt-get install google-chrome-stable
+sudo apt-get install google-chrome-stable --yes
 
 echo "Setup vim"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+
+echo "Install NodeJS"
+curl --silent --location https://deb.nodesource.com/setup_0.12 | sudo bash -
+sudo apt-get install --yes nodejs
 
 echo "Linking dotfiles to the correct location..."
 
