@@ -1,0 +1,11 @@
+{
+	"9o.hist./home/rojtjo/projects/go/ircclient/irc":
+	[
+		"go list",
+		"_/home/rojtjo/projects/go/ircclient/irc",
+		"go run ../main.go"
+	],
+	"ann": "a14.02.25-1",
+	"install_version": "r14.12.06-1",
+	"version": "r14.12.06-1"
+}

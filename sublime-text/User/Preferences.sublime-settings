@@ -1,0 +1,133 @@
+{
+	"atomic_save": false,
+	"auto_complete": true,
+	"auto_complete_delay": 0,
+	"bold_folder_labels": true,
+	"caret_style": "wide",
+	"codeintel_config":
+	{
+		"PHP":
+		{
+			"codeintel_max_recursive_dir_depth": 10,
+			"codeintel_scan_files_in_project": true,
+			"phpExtraPaths":
+			[
+			]
+		}
+	},
+	"codeintel_enabled_languages":
+	[
+		"JavaScript",
+		"Python",
+		"Ruby",
+		"Python3",
+		"Django",
+		"Perl",
+		"CSS",
+		"Twig",
+		"Less",
+		"PHP"
+	],
+	"codeintel_live": true,
+	"codeintel_live_enabled_languages":
+	[
+		"JavaScript",
+		"SCSS",
+		"Python",
+		"Ruby",
+		"Python3",
+		"Django",
+		"Perl",
+		"CSS",
+		"Twig",
+		"Less",
+		"Smarty",
+		"Node.js",
+		"Tcl",
+		"TemplateToolkit",
+		"PHP"
+	],
+	"codeintel_snippets": true,
+	"codeintel_syntax_map":
+	{
+		"JavaScript": "Node.js"
+	},
+	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/peacocks-in-space.tmTheme",
+	"detect_slow_plugins": true,
+	"enable_tab_scrolling": false,
+	"file_exclude_patterns":
+	[
+		"autoload_classmap.php",
+		"vendor/predis/predis/tests/*",
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.sublime-workspace"
+	],
+	"flatland_square_tabs": true,
+	"folder_exclude_patterns":
+	[
+		".git",
+		"node_modules"
+	],
+	"font_face": "Inconsolata",
+	"font_options":
+	[
+	],
+	"font_size": 9,
+	"gutter": true,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"JavaScript Patterns",
+		"AngularJS Snippets",
+		"CoffeeAngular Syntax",
+		"Vintage",
+		"jQuery",
+		"Arduino-like IDE",
+		"Nodejs",
+		"AngularJS",
+		"VimL",
+		"GoImports"
+	],
+	"indent_guide_options":
+	[
+		"draw_active",
+		"draw_normal"
+	],
+	"indent_to_bracket": false,
+	"line_numbers": true,
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"overlay_scroll_bars": "enabled",
+	"php_namespace.stop_folders":
+	[
+		"src",
+		"workspace",
+		"app"
+	],
+	"scroll_past_end": false,
+	"scroll_speed": 1.0,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"theme": "peacocks-in-space.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
+}

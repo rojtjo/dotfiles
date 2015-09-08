@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+\$this->app['${1:key}'] = \$this->app->share(function(\$app)
+{
+	return ${2};
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>share</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
