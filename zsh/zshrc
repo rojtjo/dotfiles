@@ -55,7 +55,6 @@ PATH=$PATH:$HOME/.composer/vendor/bin
 
 export EDITOR="vim"
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
-export VAGRANT_HOME=/media/rojtjo/storage/rojtjo/vagrant
 
 alias serve="php -S 127.0.0.1:8000 -t 'public'"
 alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
