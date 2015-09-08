@@ -11,7 +11,7 @@ function l {
 
 echo "Install packages"
 sudo apt-get update
-sudo apt-get install curl zsh i3 dunst vim htop feh --yes
+sudo apt-get install curl zsh i3 dunst vim htop feh virtualbox vagrant --yes
 
 echo "Setup Shell colors"
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
