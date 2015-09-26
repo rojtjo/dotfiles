@@ -82,8 +82,7 @@
 	"flatland_square_tabs": true,
 	"folder_exclude_patterns":
 	[
-		".git",
-		"node_modules"
+		".git"
 	],
 	"font_face": "Inconsolata",
 	"font_options":
@@ -95,16 +94,23 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"JavaScript Patterns",
-		"AngularJS Snippets",
-		"CoffeeAngular Syntax",
-		"Vintage",
-		"jQuery",
-		"Arduino-like IDE",
-		"Nodejs",
+		"ActionScript",
 		"AngularJS",
+		"AngularJS Snippets",
+		"AppleScript",
+		"Arduino-like IDE",
+		"ASP",
+		"C#",
+		"C++",
+		"Canvas Snippets",
+		"Clojure",
+		"CoffeeAngular Syntax",
+		"D",
+		"JavaScript Patterns",
+		"jQuery",
+		"Nodejs",
 		"VimL",
-		"GoImports"
+		"WordPress"
 	],
 	"indent_guide_options":
 	[
