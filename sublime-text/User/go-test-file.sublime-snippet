@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+package ${1:name}
+
+import "testing"
+
+func setUp() {
+	${2://}
+}
+
+func tearDown() {
+	${3://}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>test</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.go</scope>
+</snippet>
