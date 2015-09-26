@@ -47,7 +47,7 @@ source $ZSH/oh-my-zsh.sh
 BASE16_SHELL="$HOME/.config/base16-shell/base16-ocean.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
-export GOPATH=$HOME/go
+export GOPATH=$HOME/projects/go
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$GOPATH/bin
 PATH=$PATH:$HOME/bin
@@ -59,3 +59,4 @@ export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 alias serve="php -S 127.0.0.1:8000 -t 'public'"
 alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
 export TERM=xterm-256color
+
