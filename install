@@ -16,7 +16,7 @@ sudo apt-get update
 sudo apt-get install curl zsh i3 dunst vim htop feh virtualbox vagrant -y
 
 echo "Install php"
-sudo apt-get install php5 php5-cli php5-curl php5-mcrypt php5-xdebug php5-intl php5-sqlite php5-json php5-common -y
+sudo apt-get install php5 php5-cli php5-curl php5-mcrypt php5-xdebug php5-intl php5-sqlite php5-json php5-common php5-dev php-pear -y
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 echo "Setup Shell colors"

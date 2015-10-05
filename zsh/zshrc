@@ -48,6 +48,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-ocean.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 export GOPATH=$HOME/projects/go
+PATH=$PATH:/usr/lib/go/bin
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$GOPATH/bin
 PATH=$PATH:$HOME/bin

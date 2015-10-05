@@ -4,6 +4,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'Shougo/unite.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'scrooloose/syntastic'
 Plugin 'gmarik/Vundle.vim'
@@ -31,6 +32,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'mkusher/padawan.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -78,9 +80,15 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 let g:syntastic_quiet_messages = { "type": "style" }
 
+let g:php_cs_fixer_path = "php-cs-fixer"
+let g:php_cs_fixer_level = "psr2"
+let g:php_cs_fixer_config = "default"
+
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+let g:padawan#composer_command = "php composer"
 
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
@@ -99,3 +107,7 @@ au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
+
+filetype plugin on
+
+let g:syntastic_enable_go_checker = 0
