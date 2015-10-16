@@ -61,3 +61,6 @@ alias serve="php -S 127.0.0.1:8000 -t 'public'"
 alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
 export TERM=xterm-256color
 
+
+export NVM_DIR="/home/rojtjo/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
