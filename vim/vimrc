@@ -10,7 +10,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'terryma/vim-multiple-cursors'
@@ -21,6 +21,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'ervandew/supertab'
 Plugin 'Raimondi/delimitMate'
 Plugin 'pangloss/vim-javascript'
+Plugin 'marijnh/tern_for_vim'
 Plugin 'xsbeats/vim-blade'
 Plugin 'fatih/vim-go'
 Plugin 'majutsushi/tagbar'
@@ -33,6 +34,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'mkusher/padawan.vim'
+Plugin 'mxw/vim-jsx'
+Plugin 'rojtjo/vim-es6-react-snippets'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -54,6 +57,8 @@ set t_Co=256
 let base16colorspace=256
 colorscheme base16-3024
 set background=dark
+
+let g:jsx_ext_required = 0
 
 let g:airline_powerline_fonts=1
 
@@ -98,8 +103,6 @@ vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
 map <leader>e :NERDTreeToggle<CR>
-nnoremap <F3> :NumbersToggle<CR>
-nnoremap <F4> :NumbersOnOff<CR>
 
 nmap <F8> :TagbarToggle<CR>
 
