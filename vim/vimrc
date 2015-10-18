@@ -63,10 +63,6 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
-inoremap <Up> <NOP>
-inoremap <Down> <NOP>
-inoremap <Left> <NOP>
-inoremap <Right> <NOP>
 
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 
