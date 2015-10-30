@@ -36,6 +36,7 @@ Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'mkusher/padawan.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'nginx.vim'
 Plugin 'rojtjo/vim-es6-react-snippets'
 
 call vundle#end()            " required
