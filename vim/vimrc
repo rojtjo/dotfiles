@@ -58,7 +58,7 @@ syntax enable
 
 set t_Co=256
 let base16colorspace=256
-colorscheme base16-3024
+colorscheme base16-ocean
 set background=dark
 
 noremap <Up> <NOP>
