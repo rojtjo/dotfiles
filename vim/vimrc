@@ -38,6 +38,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'nginx.vim'
 Plugin 'rojtjo/vim-es6-react-snippets'
+Plugin 'mhinz/vim-startify'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
