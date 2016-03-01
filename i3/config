@@ -1,5 +1,6 @@
 # exec --no-startup-id xfsettingsd
-exec --no-startup-id ~/bin/random_background
+# exec --no-startup-id ~/bin/random_background
+exec_always feh --bg-fill ~/wallpapers/TBpgsdd.png
 # exec --no-startup-id ~/bin/after_xfsettingsd
 exec synclient RBCornerButton=0 RTCornerButton=0 TapButton1=0 TapButton2=0 TapButton3=0 TapAndDragGesture=0 HorizTwoFingerScroll=1
 
@@ -12,11 +13,21 @@ set $w5 5
 set $w6 6
 set $w7 7
 set $w8 8
-set $w9 9:irc
-set $w10 10:mail
+set $w9 9
+set $w10 10
 set $wm m:music
 
 set $mod Mod4
+set $default_border 1
+set $default_gaps_inner 0
+set $default_gaps_outer 0
+
+new_window pixel $default_border
+new_float  pixel $default_border
+
+gaps inner $default_gaps_inner
+gaps outer $default_gaps_outer
+
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+o move scratchpad
 # Show the first scratchpad window
@@ -168,13 +179,10 @@ client.unfocused        #333333 #222222 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 
 bindsym $mod+t border normal
-bindsym $mod+y border 1pixel
+bindsym $mod+y border pixel $default_border
 bindsym $mod+u border none
 
 bindsym $mod+r exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
-
-new_window 1pixel
-new_float  1pixel
 
 assign [class="Spotify"] $wm
 for_window [class="Spotify"] border none
@@ -182,9 +190,9 @@ for_window [class="Spotify"] border none
 assign [class="Xchat"] $w9
 for_window [class="Xchat"] border none
 
-bindsym $mod+shift+braceright exec google-chrome
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+bindsym $mod+shift+braceright exec google-chrome-stable
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
 bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle
 
 # Autostarts
@@ -195,4 +203,3 @@ exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agen
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id xscreensaver -no-splash
-exec --no-startup-id update-notifier

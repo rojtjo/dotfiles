@@ -40,7 +40,7 @@ ZSH_THEME="cloud"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git composer copydir copyfile debian extract gem github git-flow jump laravel rsync vagrant web-search)
+plugins=(git composer copydir copyfile debian extract gem github git-flow jump laravel symfony2 rsync vagrant web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -53,8 +53,10 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$GOPATH/bin
 PATH=$PATH:$HOME/bin
 PATH=$PATH:$HOME/.composer/vendor/bin
+PATH=$PATH:$HOME/.gem/ruby/2.3.0/bin
 
 export EDITOR="vim"
+export CLICOLOR=1
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 alias serve="php -S 127.0.0.1:8000 -t 'public'"
