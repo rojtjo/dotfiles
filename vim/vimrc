@@ -11,7 +11,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'editorconfig/editorconfig-vim'
@@ -37,8 +38,9 @@ Plugin 'mkusher/padawan.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'nginx.vim'
-Plugin 'rojtjo/vim-es6-react-snippets'
 Plugin 'mhinz/vim-startify'
+Plugin 'rust-lang/rust.vim'
+Plugin 'othree/yajs.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -97,6 +99,7 @@ map  N <Plug>(easymotion-prev)
 let g:jsx_ext_required = 0
 
 let g:airline_powerline_fonts=1
+let g:airline_theme='base16'
 
 let g:gitgutter_realtime=0
 let g:gitgutter_eager=0
@@ -152,3 +155,5 @@ au FileType go nmap <leader>c <Plug>(go-coverage)
 filetype plugin on
 
 let g:syntastic_enable_go_checker = 0
+
+let g:rustfmt_autosave = 1
