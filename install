@@ -61,11 +61,12 @@ curl -o $HOME/.config/sublime-text-3/Installed\ Packages/Package\ Control.sublim
 echo "Linking dotfiles to the correct location..."
 
 mkdir -p $HOME/bin
-mkdir -p $HOME/.config/{dunst,xfce4/terminal}
+mkdir -p $HOME/.config/{dunst,i3blocks,xfce4/terminal}
 mkdir -p $HOME/.i3
 
 l i3/config .i3/config
 l i3/i3status.conf .i3status.conf
+l i3blocks/config .config/i3blocks/config
 l bin/after_xfsettingsd bin/after_xfsettingsd
 l bin/random_background bin/random_background
 l dunst/dunstrc .config/dunst/dunstrc
